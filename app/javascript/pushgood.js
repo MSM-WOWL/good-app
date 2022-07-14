@@ -1,9 +1,14 @@
-function pushgood (){
-  const push = document.getElementById("good");
-  push.addEventListener("click", () => {
-    const pushNum = document.getElementById("number-of-good");
-    pushNum.innerHTML = `1`;
-  });
-};
+window.onload = function () {
+  let push = document.getElementById("good");
+  push.onclick = pushNum;
+}
 
-window.addEventListener('load', pushgood);
+var countNum = 0;
+
+pushNum = function() {
+  updateDisplay(++countNum);
+}
+
+function updateDisplay(num) {
+  document.getElementById("number-of-good").innerHTML = num;
+}
