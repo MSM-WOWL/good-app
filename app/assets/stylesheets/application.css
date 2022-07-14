@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+ .good{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.good-icon{
+  width: 300px;
+  height: 300px;
+}
+
+.number-of-good{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
